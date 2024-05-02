@@ -1,12 +1,10 @@
 <h1>Publications</h1>
 <div id="bibtex_display">
-    <!-- <div class="bibtex_template" style="display: none;">
+    <div class="bibtex_template" style="display: none;">
         <ul>
             <li>
                 <span class="if title">
-                    <a class="bibtexVar" href="http://www.website.com/~demo/papers/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">
-                        <span style="text-decoration: underline;" class="title"></span>,
-                    </a>
+                    <span class="title"></span>
                 </span>
                 <div class="if author">
                     <span class="author"></span>
@@ -19,6 +17,24 @@
                     <span class="if month"><span class="month"></span>,</span>
                     <span class="if year"><span class="year"></span>.</span>
                     <span class="if note"><span class="note"></span></span>
+                    <a class="bibtexVar" href="/pub/pdf/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">
+                        [pdf]
+                    </a>
+                    <span class = "if code">
+                        <a class="bibtexVar" extra="code">
+                            [code]
+                        </a>
+                    </span>
+                    <span class = "if slides">
+                        <a class="bibtexVar" extra="slides">
+                            [slides]
+                        </a>
+                    </span>
+                    <span class = "if video">
+                        <a class="bibtexVar" extra="video">
+                            [video]
+                        </a>
+                    </span>
                     <a class="bibtexVar" role="button" data-toggle="collapse" href="#bib+BIBTEXKEY+"
                         aria-expanded="false" aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY" bibtexjs-css-escape>
                         [bib]
@@ -32,7 +48,7 @@
                 <div style="display:none"><span class="bibtextype"></span></div>
             </li>
         </ul>
-    </div> -->
+    </div>
 </div>
 
 <script src="/src/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
