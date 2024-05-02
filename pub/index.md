@@ -4,10 +4,10 @@
         <ul>
             <li>
                 <span class="if title">
-                    <span class="title"></span>
+                    <span class="title" style="font-weight: bold;"></span>
                 </span>
                 <div class="if author">
-                    <span class="author"></span>
+                    <span class="author" style="font-size: 14px;"></span>
                 </div>
                 <div>
                     <span class="if journal"><em><span class="journal"></span></em>,</span>
@@ -17,21 +17,23 @@
                     <span class="if month"><span class="month"></span>,</span>
                     <span class="if year"><span class="year"></span>.</span>
                     <span class="if note"><span class="note"></span></span>
+                </div>
+                <div>
                     <a class="bibtexVar" href="/pub/pdf/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">
                         [pdf]
                     </a>
                     <span class = "if code">
-                        <a class="bibtexVar" extra="code">
+                        <a class="code" extra="code">
                             [code]
                         </a>
                     </span>
                     <span class = "if slides">
-                        <a class="bibtexVar" extra="slides">
+                        <a class="slides" extra="slides">
                             [slides]
                         </a>
                     </span>
                     <span class = "if video">
-                        <a class="bibtexVar" extra="video">
+                        <a class="video" extra="video">
                             [video]
                         </a>
                     </span>
