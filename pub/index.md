@@ -46,14 +46,16 @@
 
 <script src="/src/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
 <bibtex src="pub.bib"></bibtex>
+
 <script>
-$('.bibtexraw').each(function(index, bib){
-    innerHTML = bib.innerHTML;
-    console.log(innerHTML);
-    {% for field in site.pub.bib_extra_fields %}
-        innerHTML = innerHTML.replace(/^\s*{{ field }}\s* =.*$/g, "");
-        console.log(innerHTML);
-    {% endfor %}
-    bib.innerHTML = innerHTML;
-})
+removeExtraFields = function(){
+    $('.bibtexraw').each(function(index, bib){
+        innerHTML = bib.innerHTML;
+        {% for field in site.pub.bib_extra_fields %}
+            innerHTML = innerHTML.replace(/^\s*{{ field }}\s* =.*$/g, "");
+        {% endfor %}
+        bib.innerHTML = innerHTML;
+    })
+}
+window.onload = removeExtraFields;
 </script>
