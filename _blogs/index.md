@@ -7,10 +7,10 @@ title: Contents of Blogs
   {% for blog in site.blogs %}
     {% if blog.name != "index" %}
       <li>
-        {{assign dir = blog.relative_path | replace: "_blogs/", "" | split: "/" | first}}
+        {% assign dir = blog.relative_path | replace: "_blogs/", "" | split: "/" | first %}
         {% if dir != cur_dir %}
           <h2>{{ dir }}:</h2>
-          {{assign cur_dir = dir}}
+          {% assign cur_dir = dir %}
         {% endif %}
         <a href="{{ blog.url }}">{{ blog.title | replace: "-", " " }}</a>
       </li>
