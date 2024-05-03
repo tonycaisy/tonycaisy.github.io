@@ -22,21 +22,13 @@
                     <a class="bibtexVar" href="pdf/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">
                         [pdf]
                     </a>
-                    <span class = "if code">
-                        <a class="code" extra="code">
-                            [code]
-                        </a>
-                    </span>
-                    <span class = "if slides">
-                        <a class="slides" extra="slides">
-                            [slides]
-                        </a>
-                    </span>
-                    <span class = "if video">
-                        <a class="video" extra="video">
-                            [video]
-                        </a>
-                    </span>
+                    {% for field in site.pub.bibtex_extra_fields %}
+                        <span class="if {{ field }}">
+                            <a class="{{ field }}" extra="{{ field }}">
+                                [{{ field }}]
+                            </a>
+                        </span>
+                    {% endfor %}
                     <a class="bibtexVar" role="button" data-bs-toggle="collapse" href="#bib+BIBTEXKEY+"
                         aria-expanded="false" aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY" bibtexjs-css-escape>
                         [bib]
@@ -54,3 +46,12 @@
 
 <script src="/src/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
 <bibtex src="pub.bib"></bibtex>
+<script>
+$('bibtexraw.').each(function(index, bib){
+    innerHTML = bib.innerHTML;
+    {% for field in site.pub.bibtex_extra_fields %}
+        innerHTML = innerHTML.replace(/^\s*{{ field }}\s* =.*$/g, ' ');
+    {% endfor %}
+    bib.innerHTML = innerHTML;
+})
+</script>
