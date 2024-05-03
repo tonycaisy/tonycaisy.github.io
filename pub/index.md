@@ -19,7 +19,7 @@
                     <span class="if note"><span class="note"></span></span>
                 </div>
                 <div>
-                    <a class="bibtexVar" href="/pub/pdf/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">
+                    <a class="bibtexVar" href="pdf/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">
                         [pdf]
                     </a>
                     <span class = "if code">
@@ -53,4 +53,4 @@
 </div>
 
 <script src="/src/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
-<bibtex src="/pub/pub.bib"></bibtex>
+<bibtex src="pub.bib"></bibtex>
