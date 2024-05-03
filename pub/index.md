@@ -37,7 +37,7 @@
                             [video]
                         </a>
                     </span>
-                    <a class="bibtexVar" role="button" data-toggle="collapse" href="#bib+BIBTEXKEY+"
+                    <a class="bibtexVar" role="button" data-bs-toggle="collapse" href="#bib+BIBTEXKEY+"
                         aria-expanded="false" aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY" bibtexjs-css-escape>
                         [bib]
                     </a>
