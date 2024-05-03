@@ -32,7 +32,9 @@
     </header>
 
     {% if page.collection == blogs %}
-      <h1>{{ page.title | replace: "-", " " }}</h1>
+      <div class="container">
+        <h1>{{ page.title | replace: "-", " " }}</h1>
+      </div>
     {% endif %}
 
     <div class="container">

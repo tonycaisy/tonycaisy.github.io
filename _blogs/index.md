@@ -1,4 +1,6 @@
-# Contents of Blogs
+---
+title: Contents of Blogs
+---
 
 <ul>
   {% for blog in site.blogs %}
