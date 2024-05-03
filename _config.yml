@@ -4,3 +4,17 @@ plugins:
 - jekyll-remote-theme
 pub:
   bib_extra_fields: [code, slides, video]
+collections:
+  blogs:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: blogs
+    values:
+      layout: default

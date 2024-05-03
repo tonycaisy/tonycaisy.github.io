@@ -26,8 +26,14 @@
       <div style="display: inline-block;">
         <a href="/pub" class="btn btn-github">Publications</a>
       </div>
+      <div style="display: inline-block;">
+        <a href="/blogs" class="btn btn-github">Blogs</a>
       </div>
     </header>
+
+    {% if page.collection == blogs %}
+      <h1>{{ page.title | replace: "-", " " }}</h1>
+    {% endif %}
 
     <div class="container">
       <section id="main_content">
