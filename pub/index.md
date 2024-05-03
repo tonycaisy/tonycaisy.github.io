@@ -48,12 +48,12 @@
 <bibtex src="pub.bib"></bibtex>
 <script>
 $('.bibtexraw').each(function(index, bib){
-    innerHTML = bib.outerHTML;
+    innerHTML = bib.innerHTML;
     console.log(innerHTML);
     {% for field in site.pub.bib_extra_fields %}
         innerHTML = innerHTML.replace(/^\s*{{ field }}\s* =.*$/g, "");
         console.log(innerHTML);
     {% endfor %}
-    bib.outerHTML = innerHTML;
+    bib.innerHTML = innerHTML;
 })
 </script>
