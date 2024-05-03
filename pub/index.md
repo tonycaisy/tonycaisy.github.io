@@ -51,7 +51,8 @@ $('.bibtexraw').each(function(index, bib){
     innerHTML = bib.outerHTML;
     console.log(innerHTML);
     {% for field in site.pub.bib_extra_fields %}
-        innerHTML = innerHTML.replace(/^\s*{{ field }}\s* =.*$/g, ' ');
+        innerHTML = innerHTML.replace(/^\s*{{ field }}\s* =.*$/g, "");
+        console.log(innerHTML);
     {% endfor %}
     bib.outerHTML = innerHTML;
 })
