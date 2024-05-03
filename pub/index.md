@@ -1,7 +1,3 @@
----
-layout: default
----
-
 <h1>Publications</h1>
 <div id="bibtex_display">
     <div class="bibtex_template" style="display: none;">
@@ -25,9 +21,8 @@ layout: default
                 <div>
                     <a class="bibtexVar" href="pdf/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">
                         [pdf]
-                        {{ site.pub.bibtex_extra_fields }}
                     </a>
-                    {% for field in site.pub.bibtex_extra_fields %}
+                    {% for field in site.pub.bib_extra_fields %}
                         <span class="if {{ field }}">
                             <a class="{{ field }}" extra="{{ field }}">
                                 [{{ field }}]
@@ -54,7 +49,7 @@ layout: default
 <script>
 $('bibtexraw.').each(function(index, bib){
     innerHTML = bib.innerHTML;
-    {% for field in site.pub.bibtex_extra_fields %}
+    {% for field in site.pub.bib_extra_fields %}
         innerHTML = innerHTML.replace(/^\s*{{ field }}\s* =.*$/g, ' ');
     {% endfor %}
     bib.innerHTML = innerHTML;
