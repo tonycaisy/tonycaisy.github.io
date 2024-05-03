@@ -53,7 +53,7 @@ removeExtraFields = function(){
     $('.bibtexraw').each(function(index, bib){
         innerHTML = bib.innerHTML;
         {% for field in site.pub.bib_extra_fields %}
-            innerHTML = innerHTML.replace(/^\s*{{ field }}\s* =.*$/g, "");
+            innerHTML = innerHTML.replace(/\n\s*{{ field }}\s*=.*\n/g, "\n")
         {% endfor %}
         bib.innerHTML = innerHTML;
     })
