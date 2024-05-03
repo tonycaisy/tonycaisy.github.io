@@ -48,7 +48,6 @@
 <bibtex src="pub.bib"></bibtex>
 
 <script>
-/* TODO: Optimize this code */
 removeExtraFields = function(){
     $('.bibtexraw').each(function(index, bib){
         innerHTML = bib.innerHTML;
@@ -58,5 +57,5 @@ removeExtraFields = function(){
         bib.innerHTML = innerHTML;
     })
 }
-setInterval(removeExtraFields, 3000);
+window.onload = removeExtraFields;
 </script>
