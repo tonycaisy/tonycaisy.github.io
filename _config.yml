@@ -7,6 +7,8 @@ pub:
 collections:
   blogs:
     output: true
+    order:
+      - index.md
 
 defaults:
   - scope:
