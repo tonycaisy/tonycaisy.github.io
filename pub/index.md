@@ -1,3 +1,6 @@
+---
+---
+
 <h1>Publications</h1>
 <div id="bibtex_display">
     <div class="bibtex_template" style="display: none;">
@@ -21,6 +24,7 @@
                 <div>
                     <a class="bibtexVar" href="pdf/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">
                         [pdf]
+                        {{ site.pub.bibtex_extra_fields }}
                     </a>
                     {% for field in site.pub.bibtex_extra_fields %}
                         <span class="if {{ field }}">
