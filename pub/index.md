@@ -47,7 +47,6 @@
                         <pre><span class="bibtexraw noread"></span></pre>
                     </div>
                 </div>
-                <div style="display:none"><span class="bibtextype"></span></div>
             </li>
         </ul>
     </div>
