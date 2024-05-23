@@ -14,16 +14,20 @@ If you want to list your publications in HTML just like the one on my [personal 
 
 ## Basic Usage
 First, include the `bibtex_js.js` in your HTML file. You may need to modify `src` attribute to the correct path.
+
 ```html
 <script src="/src/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
 ```
 
 Second, specify your bibtex file. There are two ways to do this:
 1. Use the `bibtex` tag. Change the `src` attribute to the correct path.
+
 ```html
 <bibtex src="pub.bib"></bibtex>
 ```
+
 2. Create a `textarea` element with `id="bibtex_input"`. Then, paste your bibtex entries inside the `textarea`.
+
 ```html
 <textarea id="bibtex_input" style="display:none;">
 @inproceedings{example_entry,
