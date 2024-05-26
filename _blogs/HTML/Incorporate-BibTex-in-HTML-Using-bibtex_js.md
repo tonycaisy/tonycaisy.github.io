@@ -20,13 +20,13 @@ First, include the `bibtex_js.js` in your HTML file. You may need to modify `src
 ```
 
 Second, specify your bibtex file. There are two ways to do this:
-1. Use the `bibtex` tag. Change the `src` attribute to the correct path.
+- Use the `bibtex` tag. Change the `src` attribute to the correct path.
 
 ```html
 <bibtex src="pub.bib"></bibtex>
 ```
 
-2. Create a `textarea` element with `id="bibtex_input"`. Then, paste your bibtex entries inside the `textarea`.
+- Create a `textarea` element with `id="bibtex_input"`. Then, paste your bibtex entries inside the `textarea`.
 
 ```html
 <textarea id="bibtex_input" style="display:none;">
