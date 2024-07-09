@@ -1,5 +1,5 @@
 <h1>Publications</h1>
-<div id="bibtex_display">
+<div id="bibtex_display" callback="removeExtraFields(bibtex_display)">
     <div class="bibtex_template" style="display: none;">
         <ul>
             <li>
@@ -48,8 +48,7 @@
 <bibtex src="pub.bib"></bibtex>
 
 <script>
-/* TODO: Optimize this code */
-removeExtraFields = function(){
+removeExtraFields = function(a){
     $('.bibtexraw').each(function(index, bib){
         innerHTML = bib.innerHTML;
         {% for field in site.pub.bib_extra_fields %}
@@ -58,5 +57,4 @@ removeExtraFields = function(){
         bib.innerHTML = innerHTML;
     })
 }
-setInterval(removeExtraFields, 3000);
 </script>
