@@ -1,6 +1,6 @@
 # Shuangyu Cai (蔡双羽)
 
-I am an undergraduate student in Yao Class, [Institute for Interdisciplinary Information Sciences (IIIS)](https://iiis.tsinghua.edu.cn/) at Tsinghua University in Beijing, China. My research interests lie in both computer systems and machine learning. Here is my [CV](/assets/cv.pdf).
+I am an undergraduate student in Yao Class, [Institute for Interdisciplinary Information Sciences (IIIS)](https://iiis.tsinghua.edu.cn/) at Tsinghua University in Beijing, China. My research interests lie in both computer systems and machine learning. Here is my [CV](/assets/CV.pdf).
 
 ## Education
 
