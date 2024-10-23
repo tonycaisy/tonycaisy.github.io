@@ -19,9 +19,11 @@
                     <span class="if note"><span class="note"></span></span>
                 </div>
                 <div>
-                    <a class="bibtexVar" href="pdf/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">
-                        [pdf]
-                    </a>
+                    <span class="if !pdf">
+                        <a class="bibtexVar" href="pdf/+BIBTEXKEY+.pdf" extra="BIBTEXKEY">
+                            [pdf]
+                        </a>
+                    </span>
                     {% for field in site.pub.bib_extra_fields %}
                         <span class="if {{ field }}">
                             <a class="{{ field }}" extra="{{ field }}">
